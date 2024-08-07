@@ -1,4 +1,4 @@
-<sub>This is a fork of the great `xt0rted/pull-request-comment-branch` package. All my fork does is merge PR #323 and release it as v2.1.0 (which you can use through the `v2` tag of this repository).</sub>
+<sub>This is a fork of the great `xt0rted/pull-request-comment-branch` package. All my fork does is merge PR [#323](https://github.com/xt0rted/pull-request-comment-branch/pull/323) and release it as [v2.1.0](https://github.com/radashi-org/pull-request-comment-branch/blob/main/CHANGELOG.md#210---2024-08-07) (which you can use through the `v2` tag of this repository).</sub>
 
 ---
 
@@ -34,6 +34,7 @@ jobs:
         if: success()
         with:
           ref: ${{ steps.comment-branch.outputs.head_ref }}
+          repository: ${{ steps.comment-branch.outputs.head_owner }}/${{ steps.comment-branch.outputs.head_repo }}
 
       - run: git rev-parse --abbrev-ref HEAD
       - run: git rev-parse --verify HEAD
