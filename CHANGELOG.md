@@ -1,7 +1,8 @@
 # Changelog
 
-## Unreleased
+## [2.1.0](https://github.com/xt0rted/pull-request-comment-branch/compare/v2.0.0...v2.1.0) - 2024-08-07
 
+- Added `head_owner` and `head_repo` outputs
 - Bumped `@actions/core` from 1.10.0 to 1.10.1
 - Bumped `@actions/github` from 5.1.1 to 6.0.0
 
