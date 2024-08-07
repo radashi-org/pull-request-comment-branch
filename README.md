@@ -1,3 +1,7 @@
+<sub>This is a fork of the great `xt0rted/pull-request-comment-branch` package. All my fork does is merge PR #323 and release it as v2.1.0 (which you can use through the `v2` tag of this repository).</sub>
+
+---
+
 # Pull Request Comment Branch
 
 [![CI](https://github.com/xt0rted/pull-request-comment-branch/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/xt0rted/pull-request-comment-branch/actions/workflows/ci.yml)
@@ -23,7 +27,7 @@ jobs:
   pr-comment:
     runs-on: ubuntu-latest
     steps:
-      - uses: xt0rted/pull-request-comment-branch@v2
+      - uses: radashi-org/pull-request-comment-branch@v2
         id: comment-branch
 
       - uses: actions/checkout@v3
@@ -51,7 +55,7 @@ jobs:
   pr-comment:
     runs-on: ubuntu-latest
     steps:
-      - uses: xt0rted/pull-request-comment-branch@v2
+      - uses: radashi-org/pull-request-comment-branch@v2
 ```
 
 ### Job Config
@@ -66,7 +70,7 @@ jobs:
       issues: read
       pull-requests: read
     steps:
-      - uses: xt0rted/pull-request-comment-branch@v2
+      - uses: radashi-org/pull-request-comment-branch@v2
 ```
 
 ## Options
