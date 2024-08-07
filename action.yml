@@ -1,8 +1,8 @@
-name: "Pull Request Comment Branch"
+name: "Pull Request Comment Branch (Fork)"
 
 description: "Gets the head ref and sha of a pull request comment"
 
-author: "xt0rted"
+author: "radashi-org"
 
 branding:
   icon: "message-square"
